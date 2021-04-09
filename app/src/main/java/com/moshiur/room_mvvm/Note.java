@@ -10,12 +10,12 @@ public class Note {
     @PrimaryKey(autoGenerate = true)
     private int id;
     //@ColumnInfo(name = "column_name")
-    private String string;
+    private String title;
     private String description;
     private int priority;
 
-    public Note(String string, String description, int priority) {
-        this.string = string;
+    public Note(String title, String description, int priority) {
+        this.title = title;
         this.description = description;
         this.priority = priority;
     }
@@ -28,8 +28,8 @@ public class Note {
         return id;
     }
 
-    public String getString() {
-        return string;
+    public String getTitle() {
+        return title;
     }
 
     public String getDescription() {
